@@ -1,1 +1,1 @@
-Create two folder: img, img_crop. Then run mergeBB.py. Beforehand, you need to have an offine floder named orign_imgs that contains all images.
+Create two folder: img, img_crop. Then run mergeBB.py. Beforehand, you need to have an offine folder named orign_imgs that contains all images.
