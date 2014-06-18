@@ -5,7 +5,7 @@ import urllib
 image = urllib.URLopener()
 sys.path.append('/usr/local/Cellar/opencv/2.4.8.2/lib/python2.7/site-packages')
 
-def single_img_avgbb(img_name, gt, agg_inf, agg_inf2, agg_inf3):
+def single_img_avgbb(img_name, gt, agg_inf, agg_inf2, agg_inf3, inputfile):
     if not os.path.isdir('img/'+img_name):
         os.makedirs('img/'+img_name)
     if not os.path.isfile('orign_imgs/'+img_name+'.jpg'):
@@ -14,7 +14,7 @@ def single_img_avgbb(img_name, gt, agg_inf, agg_inf2, agg_inf3):
     height, width, depth = im.shape
     linewidth = int(max(height,width)/500)
     
-    with open('T1_output_bounding_boxes.csv', 'rb') as csvfile:
+    with open(inputfile, 'rb') as csvfile:
         contentreader = csv.reader(csvfile, delimiter=',')
         no = 0
             
@@ -48,7 +48,7 @@ def single_img_avgbb(img_name, gt, agg_inf, agg_inf2, agg_inf3):
             sizes.append((bb[2]-bb[0])*(bb[3]-bb[1]))
     wi = 0
     for w in workers_bbs:
-        print workers_bbs[w]
+        #print workers_bbs[w]
         flag = True
         for bb in workers_bbs[w]:
             this_size = (bb[2]-bb[0])*(bb[3]-bb[1])
@@ -78,10 +78,10 @@ def single_img_avgbb(img_name, gt, agg_inf, agg_inf2, agg_inf3):
     print shapes
     avged_sp = avg_shapes(shapes, im, 0, img_name, height, nr_bb_worker, agg_inf, agg_inf2, agg_inf3, gt, k_min)
     
-if __name__ == '__main__':
+def mergeBB(inputfile):
     gt = get_gt()
     
-    agg_inf = open('img/info.csv', 'w')
+    agg_inf = open('img/support_info.csv', 'w')
     agg_inf.write('image id, bb.index, No.suppt.bb, No.dist.supp.worker, No.avg.supp.bb.perWoker, No.avg.bb.perWorker, agg.lable, supp.bb.labels, supp.bb.indice,'+ 
                   'amount, prominence, nrflower_lower, nrflower_upper, nrtype_lower, nrtype_upper\n')
     agg_inf2 = open('img/data_info.csv', 'w')
@@ -91,7 +91,7 @@ if __name__ == '__main__':
     agg_inf3.write('image_id,boundingbox_id,x1,y1,x2,y2\n')
     
     imgnames = []
-    with open('T1_output_bounding_boxes.csv', 'rb') as csvfile:
+    with open(inputfile, 'rb') as csvfile:
         contentreader = csv.reader(csvfile, delimiter=',')
         no = 0
             
@@ -106,7 +106,9 @@ if __name__ == '__main__':
                 temp_img = get_id(line[3])
                 if temp_img not in imgnames:
                     imgnames.append(temp_img)
-    #imgnames = ['RP-P-OB-6880']
+    #imgnames = ['RP-P-1878-A-1872X']
     for img_name in imgnames:
         print img_name
-        single_img_avgbb(img_name, gt, agg_inf, agg_inf2, agg_inf3)
+        single_img_avgbb(img_name, gt, agg_inf, agg_inf2, agg_inf3, inputfile)
+        
+    return img_name
