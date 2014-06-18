@@ -1,6 +1,7 @@
 import json
 import csv
 from avg_bb2 import get_id
+import cv2
 
 def wrapBB(BBs):
     iname = get_id(BBs[0]['src'])
@@ -35,6 +36,9 @@ def wrapABB(iname, bb_info):
     supports = 'img/support_info.csv'
     aBB = []
     
+    im = cv2.imread('orign_imgs/'+iname+'.jpg')
+    height, width, depth = im.shape
+    
     with open(supports, 'rb') as csvfile:
         contentreader = csv.reader(csvfile, delimiter=',')
         no = 0
@@ -48,11 +52,11 @@ def wrapABB(iname, bb_info):
             
             ''' GET BASIC INFORMATION FOR AGGREGATED BB'''
             bb['image'] = line[0]
-            bb['bid'] = line[1]
+            bb['BBId'] = line[1]
             bb['NoSuppBB'] = line[2]
-            bb['NoDistSuppWorker'] = line[3]
-            bb['NoAvgSuppBBperWorker'] = line[4]
-            bb['NoAvgBBperWorker'] = line[5]
+            bb['NoDistinctSuppWorker'] = line[3]
+            bb['AvgSuppBBperWorker'] = line[4]
+            bb['AvgBBperWorker'] = line[5]
             
             with open(coordinates, 'rb') as csvfile2:
                 contentreader2 = csv.reader(csvfile2, delimiter=',')
@@ -70,10 +74,10 @@ def wrapABB(iname, bb_info):
                     shape = dict([])
                     shape['type'] = "rect"
                     shape['geometry'] = dict([])
-                    shape['geometry']['x'] = int(line2[2])
-                    shape['geometry']['y'] = int(line2[3])
-                    shape['geometry']['width'] = int(line2[4])-int(line2[2])
-                    shape['geometry']['height'] = int(line2[5])-int(line2[3])
+                    shape['geometry']['x'] = float(int(line2[2]))/width
+                    shape['geometry']['y'] = float(int(line2[3]))/height
+                    shape['geometry']['width'] = float(int(line2[4])-int(line2[2]))/width
+                    shape['geometry']['height'] = float(int(line2[5])-int(line2[3]))/height
                     shapes.append(shape)
                     bb['shapes'] = shapes
                     
