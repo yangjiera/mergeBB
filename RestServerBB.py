@@ -1,15 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-"""
-Function:
-【记录】使用Python的IDE：Eclipse+PyDev
- 
-http://www.crifan.com/try_with_python_ide_eclipse_pydev
- 
-Author:     Crifan Li
-Version:    2012-12-29
-Contact:    admin at crifan dot com
-"""
+
  
 from flask import Flask, jsonify, abort, make_response, request
 from restWrapper import *
@@ -30,7 +21,8 @@ def not_found(error):
 
 @app.route('/merge/api/v1.0/mergeBB', methods = ['POST'])
 def merge():
-    rjson = json.loads(json.dumps(request.json, ensure_ascii=False).encode('utf8'))
+    rjson = json.loads(json.dumps(json.loads(request.form["data"]), ensure_ascii=False).encode('utf8'))
+    #rjson = json.loads(json.dumps(request.json, ensure_ascii=False).encode('utf8'))
     BBs = []
     for rbb in rjson:
         BBs.append(rbb)

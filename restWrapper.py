@@ -13,7 +13,7 @@ def wrapBB(BBs):
     for b in BBs:
         #b = json.loads(json.dumps(b, ensure_ascii=False).encode('utf8'))
         #print b
-        wid = b['workerId']
+        wid = b['workerID']
         src = b['src']
         text = b['text']
         x = b['shapes'][0]['geometry']['x']
