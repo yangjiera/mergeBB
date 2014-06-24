@@ -2,6 +2,7 @@ from avg_bb2 import *
 import csv
 import cv2
 import urllib
+import shutil
 image = urllib.URLopener()
 sys.path.append('/usr/local/Cellar/opencv/2.4.8.2/lib/python2.7/site-packages')
 
@@ -110,5 +111,9 @@ def mergeBB(inputfile):
     for img_name in imgnames:
         print img_name
         single_img_avgbb(img_name, gt, agg_inf, agg_inf2, agg_inf3, inputfile)
-        
+
+
+    shutil.copy2('img/'+img_name+'/'+img_name+'_all.jpg', '/var/www/img/'+img_name+'_all.jpg')
+    shutil.copy2('img/'+img_name+'/'+img_name+'_agg.jpg', '/var/www/img/'+img_name+'_agg.jpg')
+
     return img_name
