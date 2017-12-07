@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UMAP2018 - 26th Conference on User Modeling, Adaptation and Personalization</title>
+    <description>UMAP – User Modelling, Adaptation and Personalization – is the premier international conference for researchers and practitioners working on systems that adapt to individual users, to groups of users, and that collect, represent, and model user information.</description>
+    <link>http://localhost:4000/umap2018/</link>
+    <atom:link href="http://localhost:4000/umap2018/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Call for Papers</title>
+        <description>&lt;p&gt;GDG DevFest Ukraine 2014 will be held 24-25th of October in ancient city of Lviv. If you want to be part of this great event as a speaker you knocked at the good door.&lt;/p&gt;
+
+&lt;h4 id=&quot;presenters--who-should-speak-at-the-devfest-conference&quot;&gt;Presenters – who should speak at the DevFest Conference?&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;developers (freelance and hired)&lt;/li&gt;
+  &lt;li&gt;companies developing software (apps, tools, frameworks etc.)&lt;/li&gt;
+  &lt;li&gt;research institutions with Google relevant activities&lt;/li&gt;
+  &lt;li&gt;companies, organisations and individuals using Google technologies&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you belong to one of those groups you are cordially invited to submit a talk proposal (or a number of proposals). An independent program committee assesses the proposals and selects the actual conference talks.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;themes-and-topics--what-do-we-expect&quot;&gt;Themes and topics – what do we expect?&lt;/h4&gt;
+&lt;p&gt;Our team prepared set of interesting topics in but if you have any cool idea you want to share not from this list, feel free to submit it as well.&lt;/p&gt;
+
+&lt;h5 id=&quot;android&quot;&gt;Android&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;Google I/O 2014&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Material Design&lt;/li&gt;
+  &lt;li&gt;Migration to ART&lt;/li&gt;
+  &lt;li&gt;New Android Camera API&lt;/li&gt;
+  &lt;li&gt;New Job Scheduler&lt;/li&gt;
+  &lt;li&gt;Storage Access Framework&lt;/li&gt;
+  &lt;li&gt;Elevation &amp;amp; Clipping&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;General&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Android Continuous Integration&lt;/li&gt;
+  &lt;li&gt;Loaders, Cursor Adapters&lt;/li&gt;
+  &lt;li&gt;Android Animations&lt;/li&gt;
+  &lt;li&gt;Patterns in Android development&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;web&quot;&gt;Web&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AngularJS (1x and 2.0)&lt;/li&gt;
+  &lt;li&gt;Dart (AngularDart, server-side)&lt;/li&gt;
+  &lt;li&gt;Polymer and WebComponents&lt;/li&gt;
+  &lt;li&gt;Material Design in Web&lt;/li&gt;
+  &lt;li&gt;ChromeOS (apps development)&lt;/li&gt;
+  &lt;li&gt;Web Performance (tools, techniques, approaches)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;cloud&quot;&gt;Cloud&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Google Cloud Platform
+    &lt;ul&gt;
+      &lt;li&gt;Compute Engine&lt;/li&gt;
+      &lt;li&gt;App Engine&lt;/li&gt;
+      &lt;li&gt;Storages (SQL, NoSQL, BigData)&lt;/li&gt;
+      &lt;li&gt;APIs&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Go (as a language for a Cloud Ready Apps)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;please-submit-your-proposals-here&quot;&gt;Please submit your proposals &lt;a href=&quot;http://bit.ly/dfua-c4p&quot;&gt;here&lt;/a&gt;.&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Deadline&lt;/strong&gt; is September 1, 2014&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please note:&lt;/strong&gt; There is no guarantee that a submission will be put onto the conference agenda!&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The program committee picks the most interesting talk proposals and informs the selected submitters until September 15, 2014.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;any-questions&quot;&gt;Any questions?&lt;/h4&gt;
+&lt;p&gt;Email organizers at &lt;a href=&quot;mailto:devfest@gdg.org.ua&quot;&gt;devfest@gdg.org.ua&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 21 Oct 2017 09:00:00 +0000</pubDate>
+        <link>http://localhost:4000/umap2018/calls/call-for-papers</link>
+        <guid isPermaLink="true">http://localhost:4000/umap2018/calls/call-for-papers</guid>
+      </item>
+    
+      <item>
+        <title>Hello World!</title>
+        <description>&lt;p&gt;We’re very excited that UMAP2018 website gets online!&lt;/p&gt;
+
+&lt;p&gt;More details will come soon.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 05 Aug 2017 08:00:00 +0000</pubDate>
+        <link>http://localhost:4000/umap2018/calls/hello-world</link>
+        <guid isPermaLink="true">http://localhost:4000/umap2018/calls/hello-world</guid>
+      </item>
+    
+  </channel>
+</rss>

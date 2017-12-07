@@ -1,0 +1,93 @@
+<style>
+.li{
+    font-size: 120%;
+}
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 320px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size:100%;
+    font-weight: bold; 
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1; color:#0066ff;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+
+<header id="top-header" class="top-header">
+    <div class="overlay white-solid"></div>
+    <svg id="menu-trigger" class="menu-trigger icon icon-menu visible-xs" viewBox="0 0 32 32">
+        <use xlink:href="{{ site.baseurl }}/img/sprites/sprites.svg#icon-menu"></use>
+    </svg>
+    <a href="{{ site.baseurl }}/" id="logo-header" class="logo-header">
+        <!--div class="logo logo-light"></div-->
+        <!--img class="logo" src="{{ site.baseurl }}/img/sprites/logos_umap.png" /-->
+    </a>
+    <nav class="st-menu st-effect" id="menu">
+        <div class="logo-navbar logo logo-dark visible-xs"></div>
+        <ul>
+            {% for navigationLink in site.navigationLinks %}
+            <li>
+                {% if navigationLink.permalink=="/calls/"%}
+                <div class="dropdown">
+                <a class="{% if navigationLink.permalink != null and page.permalink == navigationLink.permalink %}current{% endif %}"  
+                href="{% if navigationLink.permalink != null %} {{ navigationLink.permalink | prepend: site.baseurl }} {% else %} {{ navigationLink.link }} {% endif %}" 
+                {% if navigationLink.link != null %}
+                target="_blank"{% endif %}><b style="font-size:125%">{{ navigationLink.text}}</b></a>
+                <div class="dropdown-content">
+                    <a href="{{site.baseurl}}/cfp">Call for Papers</a>
+                    <a href="{{site.baseurl}}/cfw">Call for Workshop Proposals</a>
+                    <a href="{{site.baseurl}}/cft">Call for Tutorials</a>
+                    <a href="{{site.baseurl}}/cfd">Call for Demo, Theory, Opinion and Reflection, and Late-Breaking Results</a>
+                </div>
+                </div>
+
+                {% else %}
+                <a class="{% if navigationLink.permalink != null and page.permalink == navigationLink.permalink %}current{% endif %}"  
+                href="{% if navigationLink.permalink != null %} {{ navigationLink.permalink | prepend: site.baseurl }} {% else %} {{ navigationLink.link }} {% endif %}" 
+                {% if navigationLink.link != null %}
+                target="_blank"{% endif %}><b style="font-size:125%">{{ navigationLink.text}}</b></a>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        <ul id="bottom-navlinks" class="bottom-navlinks visible-xs">
+            {% for bottomNavigationLink in site.bottomNavigationLinks %}
+            <li>
+                <a href="{% if bottomNavigationLink.permalink != null %} {{ bottomNavigationLink.permalink | prepend: site.baseurl }} {% else %} {{ bottomNavigationLink.link }} {% endif %}" {% if bottomNavigationLink.link != null %}target="_blank"{% endif %}>{{ bottomNavigationLink.text }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% for rightNavigationButton in site.rightNavigationButtons %}
+        <!--a href="{% if rightNavigationButton.permalink != null %} {{ rightNavigationButton.permalink | prepend: site.baseurl }} {% else %} {{ rightNavigationButton.link }} {% endif %}" class="right-nav-button right-nav-button-hidden btn btn-primary waves-effect waves-button waves-light waves-float pull-right hidden-xs hidden-sm" {% if rightNavigationButton.link != null %}target="_blank"{% endif %}>
+            {{ rightNavigationButton.text }}
+        </a-->
+        {% endfor %}
+    </nav>
+</header>

@@ -1,0 +1,189 @@
+---
+title: UMAP2018 - 26th Conference on User Modeling, Adaptation and Personalization
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+gems:
+- jekyll-sitemap
+safe: false
+markdown: kramdown
+permalink: "/calls/:title"
+exclude:
+- "/automation/"
+- README.md
+- LICENSE.txt
+- CNAME
+email: ''
+description: UMAP – User Modelling, Adaptation and Personalization – is the premier
+  international conference for researchers and practitioners working on systems that
+  adapt to individual users, to groups of users, and that collect, represent, and
+  model user information.
+baseurl: "/umap2018"
+url: http://localhost
+siteVerification: TODO
+organizerName: Jie Zhang, Nanyang Technological University, Singapore
+organizerAlternateName: TODO
+organizerDescription: TODO
+organizerEmail: TODO
+organizerLogo: "/img/seo/TODO"
+organizerLink: TODO
+metaKeywords: user modeling, adaptation, recommender systems
+twitterAccount: "@UMAPconf"
+socialImageSrcGooglePlus: "/img/seo/TODO"
+socialImageSrcTwitter: "/img/seo/TODO"
+socialImageSrcFacebook: "/img/seo/TODO"
+c4pUrl: TODO
+c4sponsorsUrl: "/sponsors/"
+navigationLinks:
+- permalink: "/"
+  text: Home
+- permalink: "/organization/"
+  text: Organization
+- permalink: "/calls/"
+  text: Call for Contributions
+- permalink: "/important-dates/"
+  text: Important Dates
+- permalink: "/sponsors/"
+  text: Sponsors
+bottomNavigationLinks:
+- link: TODO
+  text: Submit your paper
+rightNavigationButtons:
+- link: TODO
+  text: Become a sponsor
+heroImage: Singapore4.jpg
+heroTitle: User Modeling, Adaptation and Personalization <typeout>
+eventDate: 8 - 11 July, 2018 at Nanyang Technological University, Singapore
+typeoutTextValues: '"ACM UMAP 2018"'
+typeoutFallback: ''
+heroButtons:
+- permalink: "/#about"
+  text: About UMAP
+- permalink: "/calls/"
+  text: Call for Papers
+aboutTitle: About UMAP
+aboutBlock:
+- text: UMAP – User Modelling, Adaptation and Personalization – is the premier international
+    conference for researchers and practitioners working on systems that adapt to
+    individual users, to groups of users, and that collect, represent, and model user
+    information. UMAP is the successor to the biennial User Modeling (UM) and Adaptive
+    Hypermedia and Adaptive Web-based Systems (AH) conferences that were merged in
+    2009. It is sponsored by ACM SIGCHI and SIGWEB, and organized with User Modeling
+    Inc. as the Steering Committee. The proceedings are published by ACM and will
+    be part of the ACM Digital Library.
+rockstarSpeakersImage: rockstar-speakers.jpg
+rockstarSpeakersCount: 0
+rockstarSpeakersTitle: Keynote speakers
+rockstarSpeakersButtonText: To be announced!
+locationBlockTitle: Location
+eventLocationName: Conference Hall
+eventLocationLink: TODO
+eventStreetAddress: 50 Nanyang Ave
+eventAddressLocality: Singapore
+eventAddressLocalityRegion: Singapore
+eventPostalCode: '639798'
+eventAddressCountry: Singapore
+eventStartTime: 2018-07-20T09:00
+eventDoorTime: '09:00'
+eventEndTime: 2018-07-25T17:00
+eventPlaceCoordinates: 1.348358, 103.683001
+mapCenterCoordinates: 1.348358, 103.683001
+mapMobileCenterCoordinates: 1.348358, 103.683001
+tweetsFeedImage: Singapore3.jp2
+tweetsFeedTitle: What's Up?
+twitterHashTag: umap2018
+organizersTitle: Sponsors and Supporters
+partnersTitle: Partners
+partnersC4sponsorsButton: Become a sponsor
+socialLinks:
+- link: https://twitter.com/usermodeling
+  icon: twitter
+- link: https://www.facebook.com/usermodeling
+  icon: facebook
+- permalink: "/feed.xml"
+  icon: rss
+footerBlocks:
+- title: Links
+  links:
+  - link: http://www.um.org
+    text: User Modeling
+- 
+showSessions: true
+findWayTitle: Find your way here
+findWayDistance: Distance
+findWayDriving: DRIVING
+findWayWalking: WALKING
+findWayBicycling: BICYCLING
+findWayTransit: TRANSIT
+findWayFindFlight: Find Flight
+logisticsMapCenterCoordinates: 1.348358, 103.683001
+logisticsMapMobileCenterCoordinates: 1.348358, 103.683001
+logisticsMapAutoDirections: false
+directionDetailsImage: direction-details.jpg
+directionDetailsTitle: Get around Nanyang Technological University
+directionDetailsCards:
+- title: From the Airport
+  information: Airport is right at the city border. It is easily reachable by car,
+    public transport or taxi. More information is available at <a href="http://lwo.aero/en/transport">airport
+    website</a>.
+- title: Public Transit
+  information: Google Transit is available in Lviv. So you can find your way in Google
+    Maps. Moreover, you can download any of the offline public transit apps available
+    for Lviv.
+- title: Hotels
+  information: Lviv has lots of great hotels and hostels. More information will be
+    available later.
+directionDetailsWideCards: 
+ticketsTitle: Pricetable
+ticketsInfo: Tickets grant access to all conference sections, coffee brakes, lunch
+  and party. Accommodation is NOT included in the ticket price.
+ticketsOffers:
+- name: Early Bird
+  price: '350'
+  priceCurrency: UAH
+  ticketsNumber: '150'
+  ribbon: "-5%"
+  buyButtonLink: http://dfua.ticketforevent.com/
+  buyButtonText: Buy Now
+  ticketContentList:
+  - Lorem ipsum is simply
+  - Dummy text of the printing
+  - Typesetting industry
+  validFrom: 2014-08-25T10:00
+  validThrough: 2014-09-30T23:59
+- name: Last Chance
+  price: '450'
+  priceCurrency: UAH
+  ticketsNumber: '100'
+  ribbon: "-20%"
+  featured: true
+  buyButtonLink: http://dfua.ticketforevent.com/
+  buyButtonText: Buy Now
+  ticketContentList:
+  - Lorem ipsum is simply
+  - Dummy text of the printing
+  - Typesetting industry
+  validFrom: 2014-10-01T00:00
+  validThrough: 2014-10-23T23:59
+  disabled: true
+- name: Student
+  price: '200'
+  priceCurrency: UAH
+  ticketsNumber: '50'
+  buyButtonLink: http://dfua.ticketforevent.com/
+  buyButtonText: Buy Now
+  additionalInfo: Requires a valid student ID at the conference check in. Without
+    student ID at the check in, ticket will be cancelled without refund
+  ticketContentList:
+  - Lorem ipsum is simply
+  - Dummy text of the printing
+  - Typesetting industry
+  validFrom: 2014-08-20T10:00
+  validThrough: 2014-10-23T23:59
+  soldOut: true
+  soldOutText: Sold Out

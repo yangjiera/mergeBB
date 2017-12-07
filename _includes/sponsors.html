@@ -1,0 +1,60 @@
+<!-- Begin Partners Section -->
+<section id="partners" class="partners">
+    <div class="content-wrapper">
+        <div class="col-lg-10 col-lg-offset-1">
+            <h3>{{ site.organizersTitle }}</h3>
+            <h5>Thanks to our sponsors:</h5>
+            {% for organizer in site.data.organizers %}
+            <h5>{{ organizer.group }}</h5>
+            <ul class="list-inline">
+                {% for element in organizer.elements %}
+                <li {% if element.width != null %}style="width: {{ element.width }};"{% endif %}>
+                    <a href="{{ element.link }}" target="_blank">
+                        <img src="{{ site.baseurl }}/img/organizers/{{ element.imageUrl }}" title="{{ element.description }}" alt="{{ element.name }}">
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        </div>
+        <div class="col-lg-10 col-lg-offset-1  text-left">
+            <h5>Why support UMAP 2018?</h5>
+            <p>UMAP is the premier international conference for researchers and practitioners working on personalization and systems that adapt to individual users, to groups of users, and that collect, represent, and model user information. It is a successor of two successful conference series: User Modeling, which started in 1986, and Adaptive Hypertext and Hypermedia, which started in 2000. UMAP is sponsored by ACM under two SIGs: CHI and Web. The proceedings will be published in the ACM Digital Library.
+            </p>
+
+            <p>UMAP 2018 covers a wide variety of research areas where personalization and adaptation may be applied. This include (but is in no way limited to) a number of domains in which researchers are engendering significant innovations based on advances in user modeling and adaptation: recommender systems; adaptive educational systems; intelligent user interfaces; eCommerce; advertising; digital humanities; social networks; personalized health; entertainment, and many more. This year, there were 5 main themes/tracks, chaired by world-renowned researchers:
+            
+
+            <li style="font-size: 110%">Personalized Recommender Systems</li>
+            <li style="font-size: 110%">Adaptive Hypermedia and the Semantic Web</li>
+            <li style="font-size: 110%">Intelligent User Interfaces</li>
+            <li style="font-size: 110%">Technology-Enhanced Adaptive Learning</li>
+            <li style="font-size: 110%">Personalized Social Web</li></p>
+
+            <p>
+            UMAP 2018 provides doctoral students with the opportunity to explore and develop their research interests under the guidance of a panel of distinguished scholars, and possibilities for researchers to present and disucss their research, and to network with other researchers. A vibrant workshop and tutorial program plus poster, demo and late-breaking results session complete the program of the conference.
+            </p>
+            
+            <p>Your investment in the conference allows you to capitalize on UMAP's respected reputation and industry connections to increase your brand awareness, strengthen your exposure in the market place, and reinforce your position as an industry leader in personalization and user-adaptive systems. There are three other benefits: first, your kind sponsorship will help keep the costs of the conference reasonable for students, and improve the quality of the conference experience for all attendees world-wide. Second, sponsors will get an opportunity to showcase their state-of- the-art personalization and recommender technologies, which helps publicize your organization’s work and recruitment effort in the area of personalization and recommender systems. Third, sponsors will be able to get involved and influence the conference events and the community as a whole.</p>
+
+            <p>We offer four levels of sponsorship summarized in the table below. In recognition of all sponsorship levels, UMAP 2018 will acknowledge your support in the following ways:
+            <li style="font-size: 110%">Your company name and logo will appear as sponsors on all formal conference announcements and on the program material given to attendees with indication of the level of sponsorship (Platinum, Gold, Silver, Bronze)</li>
+            <li style="font-size: 110%">Your company name, logo and URL will be included in the conference website (with indication of the sponsorship level).</li>
+            <li style="font-size: 110%">You have the option of naming events. We will name an event after your company (e.g., conference banquet and poster reception). The choice of naming of events will be decided based on the level of sponsorship, the amount of the contribution and the order received.</li>
+            <li style="font-size: 110%">We will announce your company's contribution and offer thanks at the opening and closing sessions of the conference.</li>
+            <li style="font-size: 110%">You will have the opportunity to include material and give-aways with the conference material for each attendee.</li>
+            <li style="font-size: 110%">You can nominate people in your organization to organize a session or participate in industry events (e.g., industry panel).</li>
+            <li style="font-size: 110%">To help connect industry with the UMAP community, we are also planning to host exhibition booths possibly a job fair;  sponsors will have a priority since our space is limited.</li>
+            <li style="font-size: 110%">Depending on the level of sponsorship, you will get a number of free registrations for the conference, so that your employees can participate in the conference and represent your company.</li>
+            </p>
+
+            <p>If you are interested to become a sponsor, please, contact Finance Chair Yang Liu (<a href="mailto: yangliu@ntu.edu.sg?Subject=UMAP2018%20Sponsorship" >email</a>). If you have any suggestions about your participation in UMAP 2018, we would also love to hear!</p>
+
+            <br/><br/>
+            <h6>Sponsorship levels - summary:</h6>
+            <img src="{{ site.baseurl }}/img/partners/sponsorship.jpg"/>
+        </div>
+    </div> 
+</section>
+<!-- End Partners Section -->
+
