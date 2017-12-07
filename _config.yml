@@ -23,7 +23,7 @@ description: UMAP – User Modelling, Adaptation and Personalization – is the 
   international conference for researchers and practitioners working on systems that
   adapt to individual users, to groups of users, and that collect, represent, and
   model user information.
-baseurl: "/mergeBB"
+baseurl: "/umap2018"
 url: http://localhost
 siteVerification: TODO
 organizerName: Jie Zhang, Nanyang Technological University, Singapore
