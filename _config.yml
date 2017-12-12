@@ -65,7 +65,7 @@ heroButtons:
 - permalink: "/#about"
   text: About UMAP
 - permalink: "/calls/"
-  text: Call for Papers
+  text: Call for Contributions
 aboutTitle: About UMAP
 aboutBlock:
 - text: UMAP – User Modelling, Adaptation and Personalization – is the premier international
@@ -103,7 +103,7 @@ partnersC4sponsorsButton: Become a sponsor
 socialLinks:
 - link: https://twitter.com/usermodeling
   icon: twitter
-- link: https://www.facebook.com/usermodeling
+- link: https://www.facebook.com/acmumap/
   icon: facebook
 - permalink: "/feed.xml"
   icon: rss

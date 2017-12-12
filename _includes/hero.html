@@ -1,9 +1,10 @@
 <!-- Begin Hero Section -->
-<section id="top-section-hero" class="top-section-hero top-section image-section" style="background-image: url('{{ site.baseurl }}/img/sections-background/{{ site.heroImage }}');">
+<section id="top-section-hero" class="top-section-hero top-section image-section" style="background-image: url('{{ site.baseurl }}/img/sections-background/{{ site.heroImage }}'); height:40em;">
     {% include navigation.html %}
     <div class="content-wrapper">
     <div class="jumbotron">
         <div class="animated hiding" data-animation="fadeInDown" data-delay="500">
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/>
             {% assign heroText = site.heroTitle | split:"<typeout>" %}
             <h1><b>{{ heroText[0] }}</b> <br/>
             <span id="typeout-text" class="hidden-xs"></span><span class="typeout-fallback">{{ site.typeoutFallback }}</span><b>{{ heroText[1] }}</b></h1>
@@ -13,11 +14,11 @@
             {% endfor %}
         </div>
     </div>
-    <a href="#about" class="explore">
+    <!--a href="#about" class="explore">
         <svg class="icon icon-arrow-down" viewBox="0 0 32 32">
             <use xlink:href="{{ site.baseurl }}/img/sprites/sprites.svg#icon-arrow-down"></use>
         </svg>
-    </a>
+    </a-->
     </div>
 </section>
 <!-- End Hero Section -->
