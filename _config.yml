@@ -48,6 +48,8 @@ navigationLinks:
   text: Call for Contributions
 - permalink: "/important-dates/"
   text: Important Dates
+- permalink: "/venue/"
+  text: Venue
 - permalink: "/sponsors/"
   text: Sponsors
 bottomNavigationLinks:
