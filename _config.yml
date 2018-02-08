@@ -48,6 +48,8 @@ navigationLinks:
   text: Call for Contributions
 - permalink: "/important-dates/"
   text: Important Dates
+- permalink: "/keynotes/"
+  text: Keynotes
 - permalink: "/venue/"
   text: Venue
 - permalink: "/sponsors/"
@@ -78,10 +80,14 @@ aboutBlock:
     2009. It is sponsored by ACM SIGCHI and SIGWEB, and organized with User Modeling
     Inc. as the Steering Committee. The proceedings are published by ACM and will
     be part of the ACM Digital Library.
-rockstarSpeakersImage: rockstar-speakers.jpg
-rockstarSpeakersCount: 0
-rockstarSpeakersTitle: Keynote speakers
-rockstarSpeakersButtonText: To be announced!
+
+
+# Rockstar Speakers Block
+rockstarSpeakersImage: "rockstar-speakers.jpg"
+rockstarSpeakersCount: 4
+rockstarSpeakersTitle: "Keynote speakers"
+rockstarSpeakersButtonText: "More details"
+
 locationBlockTitle: Location
 eventLocationName: Conference Hall
 eventLocationLink: TODO
@@ -99,6 +105,7 @@ mapMobileCenterCoordinates: 1.348358, 103.683001
 tweetsFeedImage: Singapore3.jp2
 tweetsFeedTitle: What's Up?
 twitterHashTag: umap2018
+twitterFeed: "http://lviv.gdg.org.ua/tweetledee/favoritesjson.php?c=10&cache_interval=8000"
 organizersTitle: Sponsors and Supporters
 partnersTitle: Partners
 partnersC4sponsorsButton: Become a sponsor

@@ -1,56 +1,50 @@
 <!-- Begin Speakers List-->
 <section id="speakers" class="speakers">
     <div class="content-wrapper">
-        <div class="col-lg-10 col-lg-offset-1">
-            <div class="row text-left appear-animation-trigger">
-                {% for speaker in site.data.speakers %}
-                <div class="effect-wrapper appear-animation col-md-4 col-sm-6 col-xs-12">
-                    <div class="lily-effect ribbon-activator">
-                        <div class="lily-head" data-toggle="modal" data-target="#speakerDetail-{{ speaker.id }}">
-                            <figure class="waves-effect waves-block waves-light" style="background-image: url({{ site.baseurl | append: '/img/people/' | append: speaker.thumbnailUrl }})">
-                                <div class="overlay solid-overlay"></div>
-                                {% if speaker.ribbon != null %}
-                                <ul class="ribbon-wrapper">
-                                    {% for ribbon in speaker.ribbon %}
-                                    <li class="{{ ribbon["abbr"] | downcase }}">
-                                        <p class="ribbon abbr">{{ ribbon["abbr"] }}</p>
-                                        <p class="ribbon full-title">{{ ribbon["title"] }}</p>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                                {% endif %}
-                                {% if site.showSessions %}
-                                <figcaption>
-                                    <h2 class="name">{{ speaker.name }} <span>{{ speaker.surname }}</span></h2>
-                                    <p class="position">{{ speaker.company }}</p>
-                                </figcaption>
-                                {% endif %}
-                            </figure>
-                        </div>
-                        <div class="lily-bottom">
-                            <ul class="slider">
-                                {% assign sessionsNumber = 0 %}
-                                {% if site.showSessions %} 
-                                    {% for session in site.data.sessions %} 
-                                        {% for session_speaker in session.speakers %} 
-                                            {% if session_speaker == speaker.id %}
-                                            {% assign sessionsNumber = sessionsNumber | plus: 1 %}
-                                                <li class="title slider-item animated fadeInRight hidden">{{ session.title }}</li>
-                                            {% endif %} 
-                                        {% endfor %} 
-                                    {% endfor %} 
-                                {% else %}
-                                    <h2 class="name">{{ speaker.name }} <span>{{ speaker.surname }}</span></h2>
-                                    <p class="position">{{ speaker.company }}</p>
-                                {% endif %}
-                            </ul>
-                            <a href="#" class="slider-next-item {% if sessionsNumber < 2 %}hidden{% endif %}">Next</a>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div> 
-            <a href="{{ site.c4pUrl }}" class="btn btn-primary waves-effect waves-button waves-light waves-float" target="_blank">Become a speaker</a>     
+        <div class="col-lg-10 col-lg-offset-1  text-left">
+
+            <h5><b>Yuanchun Shi</b></h5>
+            <h6>Tsinghua University, China</h6>
+
+            <table>
+            <tr>
+                <td>
+                    <img src="{{ site.baseurl }}/img/people/YuanchunShi.jpg" height="300" width="449">
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <p><b>Bio:</b> <a href="http://media.cs.tsinghua.edu.cn/~pervasive/shiyc/" target="_blank">Prof. Yuanchun Shi</a> is a Changjiang distinguished professor of the Department of Computer Science, the director of HCI & Media Integration Institute. Her research interests include pervasive computing, human computer interaction, distributed multimedia processing and e-learning. Prof. Shi has publications in IEEE Pervasive Computing, IJHCS, TPDS, TKDE, ACM CHI, MM, UIST, etc.  She has won 2 National Science and Technology Advancement Awards and many best paper awards. Prof. Shi received all her PhD, MS and BS in Computer Science from Tsinghua University.</p>
+
+                    <p><b>Title: Interpreting user input intention in natural human computer interaction</b></p>
+
+                    <p><b>Abstract:</b>  Human Computer Interaction (HCI) is about information exchange between human and computers. Interaction between users and computers occurs at the User Interface (UI). Now, computers become pervasive, they are embedded in everyday things and UIs are the main value-added competitive advantages. UIs should be more natural for users. NUI (natural user interface) expands forms beyond formal input devices like the mouse and keyboard to more and more natural forms of interaction such as touch, speech, gestures, handwriting, and vision. Unlike speech, handwriting and vision, which have been researched for decades and put into practical use recently, touch and gestures are interaction tasks related, and yet lack of study. This talk will introduce methods of modeling user input action based on data with the random noise for fast touch input and natural gestures.</p>
+
+                </td>
+            </tr>
+            </table> 
+
+            <h5><b>Ana Paiva</b></h5>
+            <h6>University of Lisbon, Portugal</h6>
+
+            <table>
+            <tr>
+                <td>
+                    <p><b>Bio:</b> <a href="https://gaips.inesc-id.pt/component/gaips/people/displayPerson/8/14/" target="_blank">Prof. Ana Paiva</a> is a  Full Professor in the Department of Computer Engineering, IST (“Instituto Superior Técnico”) from the University of Lisbon and coordinator of GAIPS – “Intelligent and Social Agents Group” at INESC-ID.  She investigates the creation of AI and complex systems using an agent-based approach, with a particular focus on social agents. Her primary research interests are in the fields of Autonomous Agents and Multi-Agent Systems, Affective Computing, Virtual Agents and Human-Robot Interaction. Her most recent work focuses on the affective and social elements present in the interactions between humans and robots more specifically on how to engineer natural and positive relationships with social robots.
+                    </p>
+                    <p>For the past twenty years she has served in the organization of numerous international conference and workshops (including, AAMAS, HRI, ACII), and (co-)authored over 200 publications in refereed journals, conferences and books</p>
+
+                    <p><b>Title: Robots that listen to people's hearts: the role of emotions in the communication between humans and social robots</b></p>
+                    
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <img src="{{ site.baseurl }}/img/people/Ana.jpg" height="300" width="449">
+
+                </td>
+            </tr>
+            </table> 
+
+   
         </div>
     </div>
 </section>
