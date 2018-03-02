@@ -94,7 +94,7 @@
                 </div>
                 </div>
 
-                {% elsif navigationLink.permalink=="/program/"%}
+                {% elsif navigationLink.permalink=="/keynotes/"%}
                 <div class="dropdown">
                 <a class="{% if navigationLink.permalink != null and page.permalink == navigationLink.permalink %}current{% endif %}"  
                 href="{% if navigationLink.permalink != null %} {{ navigationLink.permalink | prepend: site.baseurl }} {% else %} {{ navigationLink.link }} {% endif %}" 
@@ -103,6 +103,7 @@
                 <div class="dropdown-content">
                     <a href="{{site.baseurl}}/keynotes/">Keynotes</a>
                     <a href="{{site.baseurl}}/social-event/">Social Events</a>
+                    <a href="{{site.baseurl}}/workshop/">Workshops</a>
                 </div>
                 </div>
 
