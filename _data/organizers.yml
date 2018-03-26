@@ -2,9 +2,10 @@
   group: ""
   elements: 
     - {name: "UM Inc.", description: "", link: "http://www.um.org", imageUrl: "logo-uminc.png"}
-    - {name: "ACM", description: "", link: "http://www.acm.org", imageUrl: "acm_4c_grad_pos.jpg"}
+    - {name: "ACM", description: "", link: "http://www.acm.org", imageUrl: "acm_logo_smal-4.png"}
     - {name: "Springer", description: "", link: "http://www.springer.com", imageUrl: "Springer.png"}
     - {name: "SIGCHI", description: "", link: "https://sigchi.org", imageUrl: "SIGCHI_logo-150x39.jpg"}
     - {name: "SIGWEB", description: "", link: "http://www.sigweb.org", imageUrl: "sigweb_logo-150x39.jpg"}
+    - {name: "NSF", description: "", link: "https://www.nsf.gov", imageUrl: "nsf.jpg"}
     - {name: "Singapore Tourism Board", description: "", link: "https://www.stb.gov.sg", imageUrl: "stb_logo.png"}
     - {name: "Nanyang Technological University", description: "", link: "http://www.ntu.edu.sg/Pages/home.aspx", imageUrl: "ntu.jpg"}
