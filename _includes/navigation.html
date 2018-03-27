@@ -107,6 +107,17 @@
                 </div>
                 </div>
 
+                {% elsif navigationLink.permalink=="/student-support/"%}
+                <div class="dropdown">
+                <a class="{% if navigationLink.permalink != null and page.permalink == navigationLink.permalink %}current{% endif %}"  
+                href="{% if navigationLink.permalink != null %} {{ navigationLink.permalink | prepend: site.baseurl }} {% else %} {{ navigationLink.link }} {% endif %}" 
+                {% if navigationLink.link != null %}
+                target="_blank"{% endif %}><b style="font-size:125%">{{ navigationLink.text}}</b></a>
+                <div class="dropdown-content">
+                    <a href="{{site.baseurl}}/student-support/">Student Support</a>
+                </div>
+                </div>
+
                 {% else %}
                 <a class="{% if navigationLink.permalink != null and page.permalink == navigationLink.permalink %}current{% endif %}"  
                 href="{% if navigationLink.permalink != null %} {{ navigationLink.permalink | prepend: site.baseurl }} {% else %} {{ navigationLink.link }} {% endif %}" 

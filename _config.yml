@@ -42,16 +42,18 @@ c4sponsorsUrl: "/sponsors/"
 navigationLinks:
 - permalink: "/"
   text: Home
-- permalink: "/organization/"
-  text: Organization
 - permalink: "/calls/"
   text: Call for Contributions
 - permalink: "/important-dates/"
   text: Important Dates
 - permalink: "/keynotes/"
   text: Program
+- permalink: "/student-support/"
+  text: Registration
 - permalink: "/venue/"
   text: Venue
+- permalink: "/organization/"
+  text: Organization
 - permalink: "/sponsors/"
   text: Sponsors
 bottomNavigationLinks:
