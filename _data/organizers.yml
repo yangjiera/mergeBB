@@ -8,6 +8,7 @@
     - {name: "Microsoft", description: "", link: "https://www.microsoft.com/", imageUrl: "microsoft.png"}
     - {name: "NSF", description: "", link: "https://www.nsf.gov", imageUrl: "nsf.jpg"}
     - {name: "Springer", description: "", link: "http://www.springer.com", imageUrl: "Springer.png"}
+    - {name: "Yixue", description: "", link: "http://www.classba.cn", imageUrl: "yixue.png"}
     - {name: "Singapore Tourism Board", description: "", link: "https://www.stb.gov.sg", imageUrl: "stb_logo.png"}
     - {name: "Nanyang Technological University", description: "", link: "http://www.ntu.edu.sg/Pages/home.aspx", imageUrl: "ntu.jpg"}
     - {name: "UM Inc.", description: "", link: "http://www.um.org", imageUrl: "logo-uminc.png"}
