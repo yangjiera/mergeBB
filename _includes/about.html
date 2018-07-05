@@ -1,4 +1,6 @@
 <!-- About Section -->
+
+
 <section id="about" class="latest-news">
     <div class="content-wrapper">
         <div class="col-lg-10 col-lg-offset-1">
@@ -62,17 +64,41 @@
 <span style="font-size: 115%;">Click <a href="{{site.baseurl}}/important-dates/"> here for  more details</a>.</span>
 </p>
 
+
+<style>
+.btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 2px 2px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */ 
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
+</style>
             <hr>
             
             <h4> Latest News </h4>
             <article class="row">  
                     <div class="post col-md-6 col-sm-6 text-left">
-                        <h6>Ways to the Conference Venue</h6>
-                        <p class="post-body">To find ways from the airport, MRT stations, and hotels to the conference venue, please <a href="{{site.baseurl}}/umap-venue-guidance.pdf"  target="_blank">download the guidance here</a>. </p><!--a href="{{site.baseurl}}/umap2018_flyer.pdf"  target="_blank"><img width="212" heigth="300" src="{{ site.baseurl }}/img/posts/ways_to_conference.png"/></a-->
+                        <h6><button class="btn info">New !</button> Ways to the Conference Venue</h6>
+                        <p class="post-body"> To find ways from the airport, MRT stations, and hotels to the conference venue, please <a href="{{site.baseurl}}/umap-venue-guidance.pdf"  target="_blank">download the guidance here</a>. </p><!--a href="{{site.baseurl}}/umap2018_flyer.pdf"  target="_blank"><img width="212" heigth="300" src="{{ site.baseurl }}/img/posts/ways_to_conference.png"/></a-->
                     </div>  
                     <div class="post col-md-6 col-sm-6 text-left">
                         <h6>Program Overview Available</h6>
-                        <p class="post-body">An overview of the program is available <a href="{{site.baseurl}}/program/">here</a>). Detailed program (with location specification) can be found <a href="{{site.baseurl}}/detailed-program/">here</a>. </p>
+                        <p class="post-body">An overview of the program is available <a href="{{site.baseurl}}/program/">here</a>. Detailed program (with location specification) can be found <a href="{{site.baseurl}}/detailed-program/">here</a>. </p>
                     </div> 
                     <!--div class="post col-md-6 col-sm-6 text-left">
                         <h6>Follow Us on Social Media</h6>
